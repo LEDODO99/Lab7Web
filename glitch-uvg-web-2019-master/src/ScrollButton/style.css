@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(130, 130, 130, .6);
+  margin: auto;
+  position: sticky;
+  bottom: 10px;
+  padding:10px;
+}
+
+.arrow {
+  background: no-repeat url('./arrow.svg');
+  height: 40px;
+  width: 40px;
+  margin: auto;
+}
