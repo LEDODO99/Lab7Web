@@ -90,7 +90,7 @@ export default class Input extends Component {
         backgroundRepeat: "no-repeat"
     }
 
-    const clearStyle = {
+    /*const clearStyle = {
         display: "none",
         marginRight: "3.2em",
         padding: "0.5em",
@@ -120,7 +120,7 @@ export default class Input extends Component {
         margin: "auto",
         zIndex: "2",
         outline: "none"
-    }
+    }*/
     
     const divS = {
       display: "flex",
@@ -131,7 +131,7 @@ export default class Input extends Component {
       <div style={divStyle}>
         <form style={formStyle}>
           <input onChange={this.setText} name="search" style={inputStyle} type="text" autoComplete="off" tabIndex="1" autoCapitalize="off" autoCorrect="off"></input>
-          {this.state.input != "" ? 
+          {this.state.input !== "" ? 
             <div style={divS}>
               <button value="X" className="fa fa-times" style={input2Style} onClick={this.clearText} tabIndex="3"></button>
               <button className="fa fa-search" style={inputSearch} onClick={this.search} tabIndex="2"></button> 
